@@ -2,8 +2,9 @@ using Discount.API.Extensions;
 using Discount.API.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
-var d=builder.Host.MigrateDatabase<Program>();
-   
+
+/*var host = Host.CreateDefaultBuilder(args).Build();
+host.MigrateDatabase<Program>();*/
 // Add services to the container.
 
 builder.Services.AddControllers();

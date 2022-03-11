@@ -1,0 +1,335 @@
+﻿Pulling missing Docker images. To cancel this download, close the command prompt window. To disable image auto-pull, see Tools > Options > Service Fabric Tools.
+Started executing script 'Publish-NewServiceFabricApplication'.
+powershell -NonInteractive -NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -Command "[void](Connect-ServiceFabricCluster); Import-Module 'C:\Program Files\Microsoft SDKs\Service Fabric\Tools\PSModule\ServiceFabricSDK\ServiceFabricSDK.psm1'; Publish-NewServiceFabricApplication -ApplicationPackagePath 'D:\code\Microservices\src\aspdotnet-microservicesApplication\pkg\Debug' -ApplicationParameterFilePath 'D:\code\Microservices\src\aspdotnet-microservicesApplication\PublishProfiles\..\ApplicationParameters\Local.1Node.xml' -ApplicationParameter @{_WFDebugParams_='[{"""CodePackageName""":"""Code""","""CodePackageLinkFolder""":"""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API\\bin\\Debug\\net6.0""","""ConfigPackageName""":"""Config""","""ConfigPackageLinkFolder""":"""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API\\PackageRoot\\Config""","""ContainerDebugParams""":{"""Entrypoint""":["""C:\\remote_debugger\\x64\\msvsmon.exe""","""/noauth""","""/anyuser""","""/silent""","""/nostatus""","""/noclrwarn""","""/nosecuritywarn""","""/nofirewallwarn""","""/nowowwarn""","""/timeout:2147483646"""],"""EnvVars""":["""ASPNETCORE_ENVIRONMENT=Development""","""DOTNET_USE_POLLING_FILE_WATCHER=1""","""NUGET_PACKAGES=c:\\.nuget\\packages""","""NUGET_FALLBACK_PACKAGES:c:\\.nuget\\fallbackpackages"""],"""Volumes""":["""C:\\Users\\imim\\onecoremsvsmon\\17.2.1414.0:C:\\remote_debugger:ro""","""c:\\program files\\microsoft visual studio\\2022\\enterprise\\common7\\ide\\extensions\\dkkhrnyp.mdz\\NanoUtilities:c:\\remote_debugger_utilities:ro""","""C:\\Users\\imim\\.nuget\\packages\\:c:\\.nuget\\packages:ro""","""C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages:c:\\.nuget\\fallbackpackages:ro""","""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API:c:\\app"""]},"""DataPackageName""":null,"""DataPackageLinkFolder""":null,"""LockFile""":"""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API\\bin\\Debug\\net6.0\\_VS_ServiceFabric_lock.txt""","""WorkingFolder""":"""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API""","""ServiceManifestName""":"""Discount.APIPkg""","""EntryPointType""":"""Main""","""DebugExePath""":null,"""DebugArguments""":null,"""DebugParametersFile""":"""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API\\bin\\Debug\\net6.0\\_VS_ServiceFabric_debug.txt"""}]'} -Action Create -SkipPackageValidation:$true -ErrorAction Stop"
+WARNING: The names of some imported commands from the module 'ServiceFabricSDK' include unapproved verbs that might 
+make them less discoverable. To find the commands with unapproved verbs, run the Import-Module command again with the 
+Verbose parameter. For a list of approved verbs, type Get-Verb.
+D:\code\Microservices\src\aspdotnet-microservicesApplication\pkg\Debug\ApplicationManifest.xml is not found.
+At C:\Program Files\Microsoft SDKs\Service Fabric\Tools\PSModule\ServiceFabricSDK\Utilities.ps1:166 char:9
++         throw "$ApplicationManifestPath is not found."
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (D:\code\Microse...l is not found.:String) [], RuntimeException
+    + FullyQualifiedErrorId : D:\code\Microservices\src\aspdotnet-microservicesApplication\pkg\Debug\ApplicationManife 
+   st.xml is not found.
+ 
+Finished executing script 'Publish-NewServiceFabricApplication'.
+Time elapsed: 00:00:01.3650732
+Started executing script 'Publish-NewServiceFabricApplication'.
+powershell -NonInteractive -NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -Command "[void](Connect-ServiceFabricCluster); Import-Module 'C:\Program Files\Microsoft SDKs\Service Fabric\Tools\PSModule\ServiceFabricSDK\ServiceFabricSDK.psm1'; Publish-NewServiceFabricApplication -ApplicationPackagePath 'D:\code\Microservices\src\aspdotnet-microservicesApplication\pkg\Debug' -ApplicationParameterFilePath 'D:\code\Microservices\src\aspdotnet-microservicesApplication\PublishProfiles\..\ApplicationParameters\Local.1Node.xml' -ApplicationParameter @{_WFDebugParams_='[{"""CodePackageName""":"""Code""","""CodePackageLinkFolder""":"""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API\\bin\\Debug\\net6.0""","""ConfigPackageName""":"""Config""","""ConfigPackageLinkFolder""":"""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API\\PackageRoot\\Config""","""ContainerDebugParams""":{"""Entrypoint""":["""C:\\remote_debugger\\x64\\msvsmon.exe""","""/noauth""","""/anyuser""","""/silent""","""/nostatus""","""/noclrwarn""","""/nosecuritywarn""","""/nofirewallwarn""","""/nowowwarn""","""/timeout:2147483646"""],"""EnvVars""":["""ASPNETCORE_ENVIRONMENT=Development""","""DOTNET_USE_POLLING_FILE_WATCHER=1""","""NUGET_PACKAGES=c:\\.nuget\\packages""","""NUGET_FALLBACK_PACKAGES:c:\\.nuget\\fallbackpackages"""],"""Volumes""":["""C:\\Users\\imim\\onecoremsvsmon\\17.2.1414.0:C:\\remote_debugger:ro""","""c:\\program files\\microsoft visual studio\\2022\\enterprise\\common7\\ide\\extensions\\dkkhrnyp.mdz\\NanoUtilities:c:\\remote_debugger_utilities:ro""","""C:\\Users\\imim\\.nuget\\packages\\:c:\\.nuget\\packages:ro""","""C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages:c:\\.nuget\\fallbackpackages:ro""","""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API:c:\\app"""]},"""DataPackageName""":null,"""DataPackageLinkFolder""":null,"""LockFile""":"""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API\\bin\\Debug\\net6.0\\_VS_ServiceFabric_lock.txt""","""WorkingFolder""":"""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API""","""ServiceManifestName""":"""Discount.APIPkg""","""EntryPointType""":"""Main""","""DebugExePath""":null,"""DebugArguments""":null,"""DebugParametersFile""":"""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API\\bin\\Debug\\net6.0\\_VS_ServiceFabric_debug.txt"""}]'} -Action Create -SkipPackageValidation:$true -ErrorAction Stop"
+WARNING: The names of some imported commands from the module 'ServiceFabricSDK' include unapproved verbs that might 
+make them less discoverable. To find the commands with unapproved verbs, run the Import-Module command again with the 
+Verbose parameter. For a list of approved verbs, type Get-Verb.
+D:\code\Microservices\src\aspdotnet-microservicesApplication\pkg\Debug\ApplicationManifest.xml is not found.
+At C:\Program Files\Microsoft SDKs\Service Fabric\Tools\PSModule\ServiceFabricSDK\Utilities.ps1:166 char:9
++         throw "$ApplicationManifestPath is not found."
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (D:\code\Microse...l is not found.:String) [], RuntimeException
+    + FullyQualifiedErrorId : D:\code\Microservices\src\aspdotnet-microservicesApplication\pkg\Debug\ApplicationManife 
+   st.xml is not found.
+ 
+Finished executing script 'Publish-NewServiceFabricApplication'.
+Time elapsed: 00:00:01.0942110
+Started executing script 'Publish-NewServiceFabricApplication'.
+powershell -NonInteractive -NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -Command "[void](Connect-ServiceFabricCluster); Import-Module 'C:\Program Files\Microsoft SDKs\Service Fabric\Tools\PSModule\ServiceFabricSDK\ServiceFabricSDK.psm1'; Publish-NewServiceFabricApplication -ApplicationPackagePath 'D:\code\Microservices\src\aspdotnet-microservicesApplication\pkg\Debug' -ApplicationParameterFilePath 'D:\code\Microservices\src\aspdotnet-microservicesApplication\PublishProfiles\..\ApplicationParameters\Local.1Node.xml' -ApplicationParameter @{_WFDebugParams_='[{"""CodePackageName""":"""Code""","""CodePackageLinkFolder""":"""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API\\bin\\Debug\\net6.0""","""ConfigPackageName""":"""Config""","""ConfigPackageLinkFolder""":"""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API\\PackageRoot\\Config""","""ContainerDebugParams""":{"""Entrypoint""":["""C:\\remote_debugger\\x64\\msvsmon.exe""","""/noauth""","""/anyuser""","""/silent""","""/nostatus""","""/noclrwarn""","""/nosecuritywarn""","""/nofirewallwarn""","""/nowowwarn""","""/timeout:2147483646"""],"""EnvVars""":["""ASPNETCORE_ENVIRONMENT=Development""","""DOTNET_USE_POLLING_FILE_WATCHER=1""","""NUGET_PACKAGES=c:\\.nuget\\packages""","""NUGET_FALLBACK_PACKAGES:c:\\.nuget\\fallbackpackages"""],"""Volumes""":["""C:\\Users\\imim\\onecoremsvsmon\\17.2.1414.0:C:\\remote_debugger:ro""","""c:\\program files\\microsoft visual studio\\2022\\enterprise\\common7\\ide\\extensions\\dkkhrnyp.mdz\\NanoUtilities:c:\\remote_debugger_utilities:ro""","""C:\\Users\\imim\\.nuget\\packages\\:c:\\.nuget\\packages:ro""","""C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages:c:\\.nuget\\fallbackpackages:ro""","""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API:c:\\app"""]},"""DataPackageName""":null,"""DataPackageLinkFolder""":null,"""LockFile""":"""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API\\bin\\Debug\\net6.0\\_VS_ServiceFabric_lock.txt""","""WorkingFolder""":"""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API""","""ServiceManifestName""":"""Discount.APIPkg""","""EntryPointType""":"""Main""","""DebugExePath""":null,"""DebugArguments""":null,"""DebugParametersFile""":"""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API\\bin\\Debug\\net6.0\\_VS_ServiceFabric_debug.txt"""}]'} -Action Create -SkipPackageValidation:$true -ErrorAction Stop"
+WARNING: The names of some imported commands from the module 'ServiceFabricSDK' include unapproved verbs that might 
+make them less discoverable. To find the commands with unapproved verbs, run the Import-Module command again with the 
+Verbose parameter. For a list of approved verbs, type Get-Verb.
+D:\code\Microservices\src\aspdotnet-microservicesApplication\pkg\Debug\ApplicationManifest.xml is not found.
+At C:\Program Files\Microsoft SDKs\Service Fabric\Tools\PSModule\ServiceFabricSDK\Utilities.ps1:166 char:9
++         throw "$ApplicationManifestPath is not found."
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (D:\code\Microse...l is not found.:String) [], RuntimeException
+    + FullyQualifiedErrorId : D:\code\Microservices\src\aspdotnet-microservicesApplication\pkg\Debug\ApplicationManife 
+   st.xml is not found.
+ 
+Finished executing script 'Publish-NewServiceFabricApplication'.
+Time elapsed: 00:00:01.0743788
+Started executing script 'Publish-NewServiceFabricApplication'.
+powershell -NonInteractive -NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -Command "[void](Connect-ServiceFabricCluster); Import-Module 'C:\Program Files\Microsoft SDKs\Service Fabric\Tools\PSModule\ServiceFabricSDK\ServiceFabricSDK.psm1'; Publish-NewServiceFabricApplication -ApplicationPackagePath 'D:\code\Microservices\src\aspdotnet-microservicesApplication\pkg\Debug' -ApplicationParameterFilePath 'D:\code\Microservices\src\aspdotnet-microservicesApplication\PublishProfiles\..\ApplicationParameters\Local.1Node.xml' -ApplicationParameter @{_WFDebugParams_='[{"""CodePackageName""":"""Code""","""CodePackageLinkFolder""":"""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API\\bin\\Debug\\net6.0""","""ConfigPackageName""":"""Config""","""ConfigPackageLinkFolder""":"""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API\\PackageRoot\\Config""","""ContainerDebugParams""":{"""Entrypoint""":["""C:\\remote_debugger\\x64\\msvsmon.exe""","""/noauth""","""/anyuser""","""/silent""","""/nostatus""","""/noclrwarn""","""/nosecuritywarn""","""/nofirewallwarn""","""/nowowwarn""","""/timeout:2147483646"""],"""EnvVars""":["""ASPNETCORE_ENVIRONMENT=Development""","""DOTNET_USE_POLLING_FILE_WATCHER=1""","""NUGET_PACKAGES=c:\\.nuget\\packages""","""NUGET_FALLBACK_PACKAGES:c:\\.nuget\\fallbackpackages"""],"""Volumes""":["""C:\\Users\\imim\\onecoremsvsmon\\17.2.1414.0:C:\\remote_debugger:ro""","""c:\\program files\\microsoft visual studio\\2022\\enterprise\\common7\\ide\\extensions\\dkkhrnyp.mdz\\NanoUtilities:c:\\remote_debugger_utilities:ro""","""C:\\Users\\imim\\.nuget\\packages\\:c:\\.nuget\\packages:ro""","""C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages:c:\\.nuget\\fallbackpackages:ro""","""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API:c:\\app"""]},"""DataPackageName""":null,"""DataPackageLinkFolder""":null,"""LockFile""":"""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API\\bin\\Debug\\net6.0\\_VS_ServiceFabric_lock.txt""","""WorkingFolder""":"""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API""","""ServiceManifestName""":"""Discount.APIPkg""","""EntryPointType""":"""Main""","""DebugExePath""":null,"""DebugArguments""":null,"""DebugParametersFile""":"""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API\\bin\\Debug\\net6.0\\_VS_ServiceFabric_debug.txt"""}]'} -Action Create -SkipPackageValidation:$true -ErrorAction Stop"
+WARNING: The names of some imported commands from the module 'ServiceFabricSDK' include unapproved verbs that might 
+make them less discoverable. To find the commands with unapproved verbs, run the Import-Module command again with the 
+Verbose parameter. For a list of approved verbs, type Get-Verb.
+D:\code\Microservices\src\aspdotnet-microservicesApplication\pkg\Debug\ApplicationManifest.xml is not found.
+At C:\Program Files\Microsoft SDKs\Service Fabric\Tools\PSModule\ServiceFabricSDK\Utilities.ps1:166 char:9
++         throw "$ApplicationManifestPath is not found."
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (D:\code\Microse...l is not found.:String) [], RuntimeException
+    + FullyQualifiedErrorId : D:\code\Microservices\src\aspdotnet-microservicesApplication\pkg\Debug\ApplicationManife 
+   st.xml is not found.
+ 
+Finished executing script 'Publish-NewServiceFabricApplication'.
+Time elapsed: 00:00:01.1608834
+Started executing script 'Publish-NewServiceFabricApplication'.
+powershell -NonInteractive -NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -Command "[void](Connect-ServiceFabricCluster); Import-Module 'C:\Program Files\Microsoft SDKs\Service Fabric\Tools\PSModule\ServiceFabricSDK\ServiceFabricSDK.psm1'; Publish-NewServiceFabricApplication -ApplicationPackagePath 'D:\code\Microservices\src\aspdotnet-microservicesApplication\pkg\Debug' -ApplicationParameterFilePath 'D:\code\Microservices\src\aspdotnet-microservicesApplication\PublishProfiles\..\ApplicationParameters\Local.1Node.xml' -ApplicationParameter @{_WFDebugParams_='[{"""CodePackageName""":"""Code""","""CodePackageLinkFolder""":"""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API\\bin\\Debug\\net6.0""","""ConfigPackageName""":"""Config""","""ConfigPackageLinkFolder""":"""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API\\PackageRoot\\Config""","""ContainerDebugParams""":{"""Entrypoint""":["""C:\\remote_debugger\\x64\\msvsmon.exe""","""/noauth""","""/anyuser""","""/silent""","""/nostatus""","""/noclrwarn""","""/nosecuritywarn""","""/nofirewallwarn""","""/nowowwarn""","""/timeout:2147483646"""],"""EnvVars""":["""ASPNETCORE_ENVIRONMENT=Development""","""DOTNET_USE_POLLING_FILE_WATCHER=1""","""NUGET_PACKAGES=c:\\.nuget\\packages""","""NUGET_FALLBACK_PACKAGES:c:\\.nuget\\fallbackpackages"""],"""Volumes""":["""C:\\Users\\imim\\onecoremsvsmon\\17.2.1414.0:C:\\remote_debugger:ro""","""c:\\program files\\microsoft visual studio\\2022\\enterprise\\common7\\ide\\extensions\\dkkhrnyp.mdz\\NanoUtilities:c:\\remote_debugger_utilities:ro""","""C:\\Users\\imim\\.nuget\\packages\\:c:\\.nuget\\packages:ro""","""C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages:c:\\.nuget\\fallbackpackages:ro""","""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API:c:\\app"""]},"""DataPackageName""":null,"""DataPackageLinkFolder""":null,"""LockFile""":"""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API\\bin\\Debug\\net6.0\\_VS_ServiceFabric_lock.txt""","""WorkingFolder""":"""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API""","""ServiceManifestName""":"""Discount.APIPkg""","""EntryPointType""":"""Main""","""DebugExePath""":null,"""DebugArguments""":null,"""DebugParametersFile""":"""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API\\bin\\Debug\\net6.0\\_VS_ServiceFabric_debug.txt"""}]'} -Action Create -SkipPackageValidation:$true -ErrorAction Stop"
+WARNING: The names of some imported commands from the module 'ServiceFabricSDK' include unapproved verbs that might 
+make them less discoverable. To find the commands with unapproved verbs, run the Import-Module command again with the 
+Verbose parameter. For a list of approved verbs, type Get-Verb.
+D:\code\Microservices\src\aspdotnet-microservicesApplication\pkg\Debug\ApplicationManifest.xml is not found.
+At C:\Program Files\Microsoft SDKs\Service Fabric\Tools\PSModule\ServiceFabricSDK\Utilities.ps1:166 char:9
++         throw "$ApplicationManifestPath is not found."
++         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (D:\code\Microse...l is not found.:String) [], RuntimeException
+    + FullyQualifiedErrorId : D:\code\Microservices\src\aspdotnet-microservicesApplication\pkg\Debug\ApplicationManife 
+   st.xml is not found.
+ 
+Finished executing script 'Publish-NewServiceFabricApplication'.
+Time elapsed: 00:00:01.0758257
+Started executing script 'Publish-NewServiceFabricApplication'.
+powershell -NonInteractive -NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -Command "[void](Connect-ServiceFabricCluster); Import-Module 'C:\Program Files\Microsoft SDKs\Service Fabric\Tools\PSModule\ServiceFabricSDK\ServiceFabricSDK.psm1'; Publish-NewServiceFabricApplication -ApplicationPackagePath 'D:\code\Microservices\src\aspdotnet-microservicesApplication\pkg\Debug' -ApplicationParameterFilePath 'D:\code\Microservices\src\aspdotnet-microservicesApplication\PublishProfiles\..\ApplicationParameters\Local.1Node.xml' -ApplicationParameter @{_WFDebugParams_='[{"""CodePackageName""":"""Code""","""CodePackageLinkFolder""":"""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API\\bin\\Debug\\net6.0""","""ConfigPackageName""":"""Config""","""ConfigPackageLinkFolder""":"""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API\\PackageRoot\\Config""","""ContainerDebugParams""":{"""Entrypoint""":["""C:\\remote_debugger\\x64\\msvsmon.exe""","""/noauth""","""/anyuser""","""/silent""","""/nostatus""","""/noclrwarn""","""/nosecuritywarn""","""/nofirewallwarn""","""/nowowwarn""","""/timeout:2147483646"""],"""EnvVars""":["""ASPNETCORE_ENVIRONMENT=Development""","""DOTNET_USE_POLLING_FILE_WATCHER=1""","""NUGET_PACKAGES=c:\\.nuget\\packages""","""NUGET_FALLBACK_PACKAGES:c:\\.nuget\\fallbackpackages"""],"""Volumes""":["""C:\\Users\\imim\\onecoremsvsmon\\17.2.1414.0:C:\\remote_debugger:ro""","""c:\\program files\\microsoft visual studio\\2022\\enterprise\\common7\\ide\\extensions\\dkkhrnyp.mdz\\NanoUtilities:c:\\remote_debugger_utilities:ro""","""C:\\Users\\imim\\.nuget\\packages\\:c:\\.nuget\\packages:ro""","""C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages:c:\\.nuget\\fallbackpackages:ro""","""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API:c:\\app"""]},"""DataPackageName""":null,"""DataPackageLinkFolder""":null,"""LockFile""":"""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API\\bin\\Debug\\net6.0\\_VS_ServiceFabric_lock.txt""","""WorkingFolder""":"""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API""","""ServiceManifestName""":"""Discount.APIPkg""","""EntryPointType""":"""Main""","""DebugExePath""":null,"""DebugArguments""":null,"""DebugParametersFile""":"""D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API\\bin\\Debug\\net6.0\\_VS_ServiceFabric_debug.txt"""}]'} -Action Create -SkipPackageValidation:$true -ErrorAction Stop"
+WARNING: The names of some imported commands from the module 'ServiceFabricSDK' include unapproved verbs that might 
+make them less discoverable. To find the commands with unapproved verbs, run the Import-Module command again with the 
+Verbose parameter. For a list of approved verbs, type Get-Verb.
+Creating application...
+
+
+ApplicationName        : fabric:/aspdotnet-microservicesApplication
+ApplicationTypeName    : aspdotnet-microservicesApplicationType
+ApplicationTypeVersion : 1.0.0
+ApplicationParameters  : { "Discount.API_InstanceCount" = "1";
+                         "_WFDebugParams_" = "[{"CodePackageName":"Code","CodePackageLinkFolder":"D:\\code\\Microservic
+                         es\\src\\Services\\Discount\\Discount.API\\bin\\Debug\\net6.0","ConfigPackageName":"Config","C
+                         onfigPackageLinkFolder":"D:\\code\\Microservices\\src\\Services\\Discount\\Discount.API\\Packa
+                         geRoot\\Config","ContainerDebugParams":{"Entrypoint":["C:\\remote_debugger\\x64\\msvsmon.exe",
+                         "/noauth","/anyuser","/silent","/nostatus","/noclrwarn","/nosecuritywarn","/nofirewallwarn","/
+                         nowowwarn","/timeout:2147483646"],"EnvVars":["ASPNETCORE_ENVIRONMENT=Development","DOTNET_USE_
+                         POLLING_FILE_WATCHER=1","NUGET_PACKAGES=c:\\.nuget\\packages","NUGET_FALLBACK_PACKAGES:c:\\.nu
+                         get\\fallbackpackages"],"Volumes":["C:\\Users\\imim\\onecoremsvsmon\\17.2.1414.0:C:\\remote_de
+                         bugger:ro","c:\\program files\\microsoft visual studio\\2022\\enterprise\\common7\\ide\\extens
+                         ions\\dkkhrnyp.mdz\\NanoUtilities:c:\\remote_debugger_utilities:ro","C:\\Users\\imim\\.nuget\\
+                         packages\\:c:\\.nuget\\packages:ro","C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\
+                         \NuGetPackages:c:\\.nuget\\fallbackpackages:ro","D:\\code\\Microservices\\src\\Services\\Disco
+                         unt\\Discount.API:c:\\app"]},"DataPackageName":null,"DataPackageLinkFolder":null,"LockFile":"D
+                         :\\code\\Microservices\\src\\Services\\Discount\\Discount.API\\bin\\Debug\\net6.0\\_VS_Service
+                         Fabric_lock.txt","WorkingFolder":"D:\\code\\Microservices\\src\\Services\\Discount\\Discount.A
+                         PI","ServiceManifestName":"Discount.APIPkg","EntryPointType":"Main","DebugExePath":null,"Debug
+                         Arguments":null,"DebugParametersFile":"D:\\code\\Microservices\\src\\Services\\Discount\\Disco
+                         unt.API\\bin\\Debug\\net6.0\\_VS_ServiceFabric_debug.txt"}]";
+                         "Discount.API_Isolation" = "default" }
+
+Create application succeeded.
+
+
+Finished executing script 'Publish-NewServiceFabricApplication'.
+Time elapsed: 00:00:02.0880907
+Started executing script 'Get-ServiceFabricApplicationWithContainerStatus'.
+powershell -NonInteractive -NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -Command "Import-Module 'C:\Program Files\Microsoft SDKs\Service Fabric\Tools\PSModule\ServiceFabricSDK\ServiceFabricSDK.psm1';[void](Connect-ServiceFabricCluster); . 'c:\program files\microsoft visual studio\2022\enterprise\common7\ide\extensions\dkkhrnyp.mdz\Get-ServiceFabricApplicationWithContainerStatus.ps1' -ApplicationName fabric:/aspdotnet-microservicesApplication -ContainerServiceTypeNames @('Discount.APIType') -ErrorAction Stop"
+WARNING: The names of some imported commands from the module 'ServiceFabricSDK' include unapproved verbs that might 
+make them less discoverable. To find the commands with unapproved verbs, run the Import-Module command again with the 
+Verbose parameter. For a list of approved verbs, type Get-Verb.
+The application has started.
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, no container is running.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, no container is running.
+
+Service Status:
+Finished executing script 'Get-ServiceFabricApplicationWithContainerStatus'.
+Time elapsed: 00:00:06.1108099
+Started executing script 'Get-ServiceFabricApplicationWithContainerStatus'.
+powershell -NonInteractive -NoProfile -WindowStyle Hidden -ExecutionPolicy Bypass -Command "Import-Module 'C:\Program Files\Microsoft SDKs\Service Fabric\Tools\PSModule\ServiceFabricSDK\ServiceFabricSDK.psm1';[void](Connect-ServiceFabricCluster); . 'c:\program files\microsoft visual studio\2022\enterprise\common7\ide\extensions\dkkhrnyp.mdz\Get-ServiceFabricApplicationWithContainerStatus.ps1' -ApplicationName fabric:/aspdotnet-microservicesApplication -ContainerServiceTypeNames @('Discount.APIType') -ErrorAction Stop"
+WARNING: The names of some imported commands from the module 'ServiceFabricSDK' include unapproved verbs that might 
+make them less discoverable. To find the commands with unapproved verbs, run the Import-Module command again with the 
+Verbose parameter. For a list of approved verbs, type Get-Verb.
+The application has started.
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, no container is running.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, no container is running.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, no container is running.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, no container is running.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, no container is running.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, no container is running.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, no container is running.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, no container is running.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, no container is running.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, no container is running.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, no container is running.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, no container is running.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, no container is running.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, no container is running.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, no container is running.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, no container is running.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, no container is running.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
+Service Status:
+fabric:/aspdotnet-microservicesApplication/Discount.API is not ready, 1 partitions remaining.
+
