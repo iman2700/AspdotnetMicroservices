@@ -1,19 +1,33 @@
-using Discount.API.Extensions;
-using Discount.API.Repositories;
+using Ordering.API.Extensions;
+using Ordering.Application;
+using Ordering.Infrastructure;
+using Ordering.Infrastructure.Persistance;
 
 var builder = WebApplication.CreateBuilder(args);
 
 var host = Host.CreateDefaultBuilder(args).Build();
-host.MigrateDatabase<Program>();
+//host.MigrateDatabase<OrderContext>((context,services) =>
+//    { 
+//        var logger = services.GetService<ILogger<OrderContextSeed>>();
+//        OrderContextSeed.SeedAsync(context, logger).Wait();
+//    }
+//    );
+
 // Add services to the container.
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddScoped<IDiscountRepository, DiscountRepository>();
+
+builder.Services.AddAplicationServices();
+builder.Services.AddInfrastructureServices(builder.Configuration);
 
 var app = builder.Build();
+
+
+
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
