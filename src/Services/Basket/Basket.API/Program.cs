@@ -1,7 +1,10 @@
 using Basket.API.GrpcServices;
 using Basket.API.Repositories;
 using Discount.Grpc.Protos;
+using MassTransit;
 
+
+ 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -12,15 +15,26 @@ builder.Services.AddControllers();
  
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+//radis congiguration
 builder.Services.AddStackExchangeRedisCache(opton =>
 {
     opton.Configuration = builder.Configuration["CatcheSetting:ConnectionString"];
 });
 builder.Services.AddScoped<IBasketRepository, BasketRepository>();
+
 builder.Services.AddGrpcClient<DiscountProtoService.DiscountProtoServiceClient>
     (o => o.Address = new Uri(builder.Configuration["GrpcSetting:DiscountUrl"]));
 builder.Services.AddScoped<DiscountGrpcService>();
+//massTransit-rebbimq configuration
+builder.Services.AddMassTransit(config => {
+    config.UsingRabbitMq((ctx, cfg) => {
+        cfg.Host((builder.Configuration["EventBusSettings:HostAddress"]));
+     }
+ );
+});
 
+//builder.Services.AddMassTransitHostedService();
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 var app = builder.Build();
 
 

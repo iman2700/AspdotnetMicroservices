@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Ordering.Application.Features.Orders.Commands.CheckOutOrder;
 using Ordering.Application.Features.Orders.Commands.UpdateOrder;
-using Ordering.Application.Features.Orders.Queries.GetOlderList;
+using Ordering.Application.Features.Orders.Queries.GetOrderList;
 using Ordering.Domain.Entitiy;
 using System;
 using System.Collections.Generic;
